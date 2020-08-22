@@ -1,0 +1,12 @@
+.aboutWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  row-gap: 1rem;
+}
+.aboutText {
+  text-align: left;
+}
+.image {
+  height: 100%;
+}
