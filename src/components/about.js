@@ -2,7 +2,8 @@ import React from 'react';
 import Img from 'gatsby-image';
 import styles from './about.module.css';
 
-const About = ({ data }) => {
+function About({ data }) {
+  console.log(data);
   return (
     <div className={styles.aboutWrapper}>
       <div className={styles.aboutText}>
@@ -12,11 +13,11 @@ const About = ({ data }) => {
         <Img
           className={styles.image}
           alt={data.name}
-          fluid={data.heroImage.fluid}
+          fluid={data.image.fluid}
         />
       </div>
     </div>
   );
-};
+}
 
 export default About;
