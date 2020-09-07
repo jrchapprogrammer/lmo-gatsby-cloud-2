@@ -10,6 +10,10 @@
   font-size: 1.5em;
 }
 
+.previewTitle a {
+  text-decoration: none;
+}
+
 .tag {
   color: #a0a0a0;
   text-decoration: none;

@@ -24,7 +24,7 @@ export default ({ article }) => (
     <small>{article.createdAt}</small>
     <p
       dangerouslySetInnerHTML={{
-        __html: article.subtitle,
+        __html: article.virtuals.subtitle,
       }}
     />
   </div>
