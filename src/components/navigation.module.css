@@ -17,4 +17,10 @@
 
 .navigationItem a {
   color: currentColor;
+  text-decoration: none;
+}
+
+.navigationItem a:hover,
+.navigationItem a:focus {
+  color: rgb(128, 128, 128);
 }

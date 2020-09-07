@@ -4,6 +4,10 @@
 .mainTitleContainer {
   margin: 2rem auto 0;
 }
+
+.mainTitleContainer a {
+  text-decoration: none;
+}
 .mainTitle {
   font-size: 3.6em;
   text-align: center;
