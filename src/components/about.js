@@ -18,7 +18,7 @@ function About({ data }) {
         /> */}
         <img
           alt="author image"
-          src="https://miro.medium.com/fit/c/350/350/1*An5DXaNrS0Mrgzzck3YoNA.jpeg"
+          src="https://miro.medium.com/fit/c/500/500/1*An5DXaNrS0Mrgzzck3YoNA.jpeg"
         />
       </div>
     </div>

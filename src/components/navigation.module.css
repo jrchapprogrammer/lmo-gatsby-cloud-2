@@ -16,11 +16,11 @@
 }
 
 .navigationItem a {
-  color: currentColor;
+  color: rgba(80, 80, 80, 1);
   text-decoration: none;
 }
 
 .navigationItem a:hover,
 .navigationItem a:focus {
-  color: rgb(128, 128, 128);
+  color: rgba(80, 80, 80, 0.6);
 }
