@@ -10,10 +10,15 @@ function About({ data }) {
         <p>{data.shortBio.shortBio}</p>
       </div>
       <div className={styles.image}>
-        <Img
-          className={styles.image}
+        {/* <img
+          // className={styles.image}
           alt={data.name}
-          fluid={data.image.fluid}
+          src={data.image.fluid.src}
+          // fluid={data.image.fluid}
+        /> */}
+        <img
+          alt="author image"
+          src="https://miro.medium.com/fit/c/350/350/1*An5DXaNrS0Mrgzzck3YoNA.jpeg"
         />
       </div>
     </div>

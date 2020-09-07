@@ -76,7 +76,7 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location}>
       <div style={{ background: '#fff' }}>
         <SEO title={siteTitle} />
-        <div className={styles.hero}>Blog</div>
+
         <div className="wrapper">
           <h2 className="section-headline">Recent articles</h2>
           <ul className="article-list">
@@ -113,12 +113,16 @@ export const pageQuery = graphql`
               imageId
             }
           }
+          author {
+            username
+          }
         }
       }
     }
     author: mediumUser {
       username
       name
+      imageId
     }
     site {
       siteMetadata {

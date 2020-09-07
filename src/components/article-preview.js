@@ -4,11 +4,22 @@ import Img from 'gatsby-image';
 
 import styles from './article-preview.module.css';
 
+const MEDIUM_CDN = 'https://cdn-images-1.medium.com/max/400';
+const MEDIUM_URL = 'https://medium.com';
+
 export default ({ article }) => (
   <div className={styles.preview}>
-    <Img alt="" fluid={article.virtuals.previewImage} />
+    <img
+      alt={article.title}
+      src={`${MEDIUM_CDN}/${article.virtuals.previewImage.imageId}`}
+      height="200px"
+    />
     <h3 className={styles.previewTitle}>
-      <Link to={`/blog/${article.uniqueSlug}`}>{article.title}</Link>
+      <a
+        href={`${MEDIUM_URL}/${article.author.username}/${article.uniqueSlug}`}
+      >
+        {article.title}
+      </a>
     </h3>
     <small>{article.createdAt}</small>
     <p

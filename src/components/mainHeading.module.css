@@ -2,9 +2,10 @@
 * main title
 */
 .mainTitleContainer {
-  margin: 2rem auto;
+  margin: 2rem auto 0;
 }
 .mainTitle {
   font-size: 3.6em;
   text-align: center;
+  margin: 0;
 }

@@ -3,12 +3,8 @@ require('dotenv').config({
 });
 
 const contentfulConfig = {
-  spaceId: process.env.CONTENTFUL_SPACE_ID
-    ? process.env.CONTENTFUL_SPACE_ID
-    : 'lzrqr22dknwe',
-  accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
-    ? process.env.CONTENTFUL_ACCESS_TOKEN
-    : 'UNgbjSutYn5T_W6vo2crSj5dF8kMFDepCbEWHbIHT5o',
+  spaceId: process.env.CONTENTFUL_SPACE_ID,
+  accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
 };
 
 // if you want to use the preview API please define
@@ -29,8 +25,8 @@ if (!spaceId || !accessToken) {
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Contentful starter',
-    description: 'Starter for Gatsby on Contentful',
+    title: 'Dr. Luisa M. Ossa',
+    description: 'Website for Dr. Luisa M. Ossa',
   },
   pathPrefix: '/gatsby-contentful-starter',
   plugins: [
